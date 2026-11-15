@@ -10,9 +10,11 @@
         .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
         .skip-link:focus { top: 0; }
         
-        /* Header styling - explicitly making text white */
-        header { background-color: #222; color: #ffffff; padding: 20px; }
-        header h1 { color: #ffffff; margin-top: 0; margin-bottom: 10px; }
+        /* Header */
+        header { background-color: #222; padding: 20px; }
+        
+        /* Specific rule to force the logo text to be white */
+        .logo-text { color: #ffffff !important; margin: 0 0 10px 0; }
         
         /* Navigation */
         nav ul { list-style: none; padding: 0; display: flex; gap: 15px; margin: 0; }
@@ -22,8 +24,10 @@
         /* Main Content */
         main { padding: 20px; max-width: 800px; margin: auto; background: #fff; }
         
-        /* Typography */
-        h1 { color: #222; }
+        /* Page Title */
+        .page-title { color: #222; border-bottom: 2px solid #cfa670; padding-bottom: 10px; }
+        
+        /* Menu Typography */
         h2 { color: #cfa670; margin-top: 30px; border-bottom: 1px solid #ccc; }
         h3 { color: #333; margin-bottom: 5px; }
         
@@ -38,7 +42,8 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <h1>Carelli's of Boulder</h1>
+        <!-- Added class="logo-text" here -->
+        <h1 class="logo-text">Carelli's of Boulder</h1>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -50,7 +55,8 @@
     </header>
 
     <main id="main-content">
-        <h1>Dinner Menu</h1>
+        <!-- Added class="page-title" here -->
+        <h1 class="page-title">Dinner Menu</h1>
 
         <!-- Component 2: Fixed Heading Hierarchy (H2 for sections, H3 for dishes) -->
         <h2>Antipasti</h2>
