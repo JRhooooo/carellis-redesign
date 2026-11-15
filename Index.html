@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carelli's of Boulder - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+        .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
+        .skip-link:focus { top: 0; }
+        header { background-color: #222; color: #fff; padding: 20px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; }
+        nav a:focus { outline: 3px solid #cfa670; }
+        .hero { background-color: #555; color: #fff; padding: 60px 20px; text-align: center; }
+        main { padding: 20px; max-width: 800px; margin: auto; }
+        .reservation { background-color: #cfa670; color: #000; padding: 20px; text-align: center; margin: 20px 0; font-size: 1.2em; }
+        .reservation a { color: #000; font-weight: bold; text-decoration: underline; }
+        footer { background-color: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Component 6: Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Component 1: Header Landmark -->
+    <header>
+        <h1>Carelli's of Boulder</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dinner.html">Dinner Menu</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Carelli's</h2>
+        <p>Authentic Italian cuisine in the heart of Boulder since 1991.</p>
+    </div>
+
+    <!-- Component 1: Main Landmark -->
+    <main id="main-content">
+        
+        <!-- Component 5: Clickable Phone Number -->
+        <div class="reservation">
+            <p><strong>Reservations Recommended</strong></p>
+            <p>Call us at: <a href="tel:3039389300">303-938-9300</a></p>
+        </div>
+
+        <h2>Our Restaurant</h2>
+        <p>Warmer weather brings the opportunity to dine al fresco on Carelli's patio. The restaurant's stunning décor is matched by friendly, flawless service and a menu that combines the best from both traditional and contemporary cuisines of northern and southern Italy.</p>
+    </main>
+
+    <!-- Component 1: Footer Landmark -->
+    <footer>
+        <p>Carelli's of Boulder</p>
+        <p>645 30th St, Boulder, CO 80303</p>
+        <p>Phone: <a href="tel:3039389300" style="color: #cfa670;">303. 938.9300</a></p>
+        <p>Hours: Mon-Thu 4-9 PM | Fri-Sat 4-9:30 PM | Closed Sunday</p>
+    </footer>
+
+</body>
+</html>
