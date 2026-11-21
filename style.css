@@ -149,3 +149,44 @@ footer a {
     background-color: #b8905d;
     color: #ffffff;
 }
+
+/* --- DROPDOWN NAVIGATION STYLES --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #cfa670;
+    color: #1a1a1a;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Accessibility: Focus states for keyboard navigation */
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
