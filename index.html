@@ -3,36 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carelli's of Boulder offers authentic Italian cuisine. View our dinner menu, make reservations, and find our hours.">
     <title>Carelli's of Boulder - Home</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
-        
-        .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
-        .skip-link:focus { top: 0; }
-        
-        /* Header styling - explicitly making text white */
-        header { background-color: #222; color: #ffffff; padding: 20px; }
-        header h1 { color: #ffffff; margin-top: 0; margin-bottom: 10px; }
-        
-        /* Navigation */
-        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; margin: 0; }
-        nav a { color: #ffffff; text-decoration: none; font-weight: bold; }
-        nav a:focus { outline: 3px solid #cfa670; }
-        
-        /* Hero Section */
-        .hero { background-color: #555; color: #ffffff; padding: 60px 20px; text-align: center; }
-        .hero h2 { color: #ffffff; margin-top: 0; }
-        
-        /* Main Content */
-        main { padding: 20px; max-width: 800px; margin: auto; }
-        main h2 { color: #222; }
-        
-        /* Reservation Box */
-        .reservation { background-color: #cfa670; color: #000; padding: 20px; text-align: center; margin: 20px 0; font-size: 1.2em; }
-        .reservation a { color: #000; font-weight: bold; text-decoration: underline; }
-        
-        footer { background-color: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
-    </style>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -41,7 +15,7 @@
 
     <!-- Component 1: Header Landmark -->
     <header>
-        <h1>Carelli's of Boulder</h1>
+        <h1 class="logo-text">Carelli's of Boulder</h1>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -74,7 +48,8 @@
     <footer>
         <p>Carelli's of Boulder</p>
         <p>645 30th St, Boulder, CO 80303</p>
-        <p>Phone: <a href="tel:3039389300" style="color: #cfa670;">303. 938.9300</a></p>
+        <!-- Inline style removed here -->
+        <p>Phone: <a href="tel:3039389300">303. 938.9300</a></p>
         <p>Hours: Mon-Thu 4-9 PM | Fri-Sat 4-9:30 PM | Closed Sunday</p>
     </footer>
 
