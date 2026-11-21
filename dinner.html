@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View the dinner menu at Carelli's of Boulder.">
+    <meta name="description" content="View the complete dinner menu at Carelli's of Boulder.">
     <title>Dinner Menu - Carelli's of Boulder</title>
-    <!-- Link to your external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +16,12 @@
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="dinner.html">Dinner Menu</a></li>
+                <li class="dropdown">
+                    <a href="dinner.html">Dinner Menu</a>
+                    <div class="dropdown-content">
+                        <a href="gluten-free.html">Gluten-Free Menu</a>
+                    </div>
+                </li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -27,9 +31,7 @@
     <main id="main-content">
         <h1 class="page-title">Dinner Menu</h1>
 
-        <!-- Component 2: Fixed Heading Hierarchy (H2 for sections, H3 for dishes) -->
         <h2>Antipasti</h2>
-        
         <h3>Charcuterie <span class="price">$23.95 - $33.95</span></h3>
         <p class="dish-desc">Artisan meats or cheeses with homemade condiments.</p>
 
@@ -39,7 +41,71 @@
         <h3>Caprese <span class="price">$18.95</span></h3>
         <p class="dish-desc">Fresh mozzarella, fresh basil, ripe organic tomatoes.</p>
 
+        <h3>Fried Mozzarella <span class="price">$12.95</span></h3>
+        <p class="dish-desc">Hand breaded mozzarella pan fried, marinara.</p>
+
+        <h3>Bruschetta <span class="price">$18.95</span></h3>
+        <p class="dish-desc">French bread, tomatoes, garlic, basil, onions.</p>
+
+        <h3>Pesto Bruschetta <span class="price">$17.95</span></h3>
+        <p class="dish-desc">French bread, pesto, marinated sundried tomatoes, feta cheese.</p>
+
+        <h3>Carpaccio <span class="price">$20.95</span></h3>
+        <p class="dish-desc">Colorado dry-aged strip loin sliced thin, arugula, fried capers, smoked tomato aioli.</p>
+
+        <h3>Meatball Classic <span class="price">$18.95</span></h3>
+        <p class="dish-desc">3 beef meatballs, melted fontina cheese, basil garlic pesto, Grana Padano cheese.</p>
+
+        <h3>P.E.I. Mussels <span class="price">$21.95</span></h3>
+        <p class="dish-desc">Poached Prince Edward Island mussels, garlic, white wine broth.</p>
+
+        <h3>Calamari <span class="price">$20.95</span></h3>
+        <p class="dish-desc">Half pound Town Dock ocean squid, lightly breaded.</p>
+
+        <h3>Salmon Carpaccio <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Paper thin Ducktrap River smoked salmon, capers, herb oil.</p>
+
+        <h3>Eggplant Stack <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Stacked eggplant baked with goat cheese, roasted peppers, red pepper coulis.</p>
+
+        <h3>Arrancini <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Crispy fried parmesan risotto balls with sugar snap peas.</p>
+
+        <h2>Zuppa e Insalate</h2>
+        <p class="dish-desc" style="font-style:normal; margin-bottom: 20px;"><em>Garlic bread accompanies all large salads.</em></p>
+        
+        <h3>Zuppa Minestrone <span class="price">$5.95 - $9.95</span></h3>
+        <p class="dish-desc">Fresh vegetables, tomato broth.</p>
+
+        <h3>House Insalata <span class="price">$12.95 - $17.95</span></h3>
+        <p class="dish-desc">Crisp romaine, baby greens.</p>
+
+        <h3>Arugula Insalata <span class="price">$14.95</span></h3>
+        <p class="dish-desc">Lemon olive oil, shaved Pecorino, watermelon radish.</p>
+
+        <h3>Greek Insalata <span class="price">$13.95</span></h3>
+        <p class="dish-desc">Organic tomatoes, English cucumber, bell pepper, sheep's milk feta.</p>
+
+        <h3>Antipasto Misto <span class="price">$14.95 - $18.95</span></h3>
+        <p class="dish-desc">Crisp romaine, mixed greens, traditional Italian meats, provolone cheese.</p>
+
+        <h3>Shaved Apple & Kale Insalata <span class="price">$18.95</span></h3>
+        <p class="dish-desc">Candied almonds, watermelon radish, Grana Padano cheese, brandy sherry vinaigrette.</p>
+
+        <h3>Caesar <span class="price">$13.95 - $19.95</span></h3>
+        <p class="dish-desc">Crisp romaine, roasted garlic caesar dressing, parmesan.</p>
+
+        <h3>Gregorio Spinaci <span class="price">$12.95 - $18.95</span></h3>
+        <p class="dish-desc">Fresh spinach, roasted pine nuts, chilled applewood smoked honey bacon dressing.</p>
+
+        <h3>Grilled Chicken Insalata <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Flame broiled all natural chicken breast, spring vegetables, crisp romaine.</p>
+
+        <h3>Grilled Salmon Caesar <span class="price">$24.95</span></h3>
+        <p class="dish-desc">Atlantic filet over crisp romaine, roasted garlic, Caesar dressing.</p>
+
         <h2>Pasta</h2>
+        <p class="dish-desc" style="font-style:normal; margin-bottom: 20px;"><em>Served with homemade garlic bread.</em></p>
 
         <h3>Spaghettini <span class="price">$19.95</span></h3>
         <p class="dish-desc">Homemade marinara or meat sauce.</p>
@@ -47,14 +113,225 @@
         <h3>Ravioli <span class="price">$19.95</span></h3>
         <p class="dish-desc">Pasta filled with ricotta, mozzarella and Romano cheese.</p>
 
+        <h3>Baked Jumbo Shells <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Stuffed with spinach, Romano, mozzarella, baked with marinara.</p>
+
+        <h3>Manicotti <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Pasta shells stuffed with fresh basil, three Italian cheeses, baked with marinara.</p>
+
+        <h3>Tri-Colored Tortellini <span class="price">$20.95</span></h3>
+        <p class="dish-desc">Baked with pesto cream, parmesan, ricotta, mozzarella cheese.</p>
+
+        <h3>Spaghettini Bolognese <span class="price">$23.95</span></h3>
+        <p class="dish-desc">With homemade meatballs or sausage.</p>
+
         <h3>Fettuccine Alfredo <span class="price">$20.95</span></h3>
         <p class="dish-desc">Parmesan and Romano cheese, nutmeg, fettuccine.</p>
+
+        <h3>Eggplant Parmigiana <span class="price">$20.95</span></h3>
+        <p class="dish-desc">Eggplant baked with four Italian cheeses, served with pasta.</p>
+
+        <h3>Fettuccine Peroni <span class="price">$23.95</span></h3>
+        <p class="dish-desc">Lonardo's Italian sausage, tomatoes, bell peppers, Greek oregano, sautéed with Peroni beer, over fettuccine.</p>
+
+        <h3>Pappardelle Carbonara <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Egg pasta, pancetta, mushrooms, shallots, garlic parmesan cream.</p>
+
+        <h3>Angel Hair alla Olio <span class="price">$18.95</span></h3>
+        <p class="dish-desc">Angel hair pasta, garlic and extra virgin olive oil.</p>
+
+        <h3>Pasta con Funghi <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Sautéed mushrooms, tomato sauce, basil, garlic, white wine, over spaghettini.</p>
+
+        <h3>Pesto Penne <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Pennette, marinated sundried tomatoes, feta cheese, fresh basil pesto.</p>
+
+        <h3>Angel Hair con Clam <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Little Neck clams, white wine, garlic, herbs, over angel hair pasta.</p>
+
+        <h3>Penne Pizzaiola Mozzarella <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Pennette, light tomato broth, melted fresh mozzarella, fresh basil, garlic.</p>
+
+        <h3>Gnocchi <span class="price">$20.95</span></h3>
+        <p class="dish-desc">Housemade potato gnocchi, peas, Hazel Dell mushrooms, roasted red onion, Pecorino.</p>
+
+        <h2>Pollo e Risotto</h2>
+        <p class="dish-desc" style="font-style:normal; margin-bottom: 20px;"><em>Served with homemade garlic bread. We use Regal Crest Farms all natural chicken.</em></p>
+
+        <h3>Carelli Rosso <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Penne pasta, homemade marinara, flame broiled chicken breast.</p>
+
+        <h3>Carelli Bianco <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Penne pasta, fresh raw vegetables, flame broiled chicken breast, vinaigrette.</p>
+
+        <h3>Chicken Parmigiana <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Baked with four Italian cheeses with pasta.</p>
+
+        <h3>Pollo D'Abruzzo <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Chicken sautéed with caramelized bell peppers, onions, over pasta.</p>
+
+        <h3>Scoozi <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Chicken, artichoke hearts, broccoli, simmered in white wine, over pasta.</p>
+
+        <h3>Pollo alla Carelli <span class="price">$22.95</span></h3>
+        <p class="dish-desc">Chicken sautéed with caramelized broccoli, olive oil, over pasta.</p>
+
+        <h3>Pollo alla Cacciatore <span class="price">$23.95</span></h3>
+        <p class="dish-desc">Chicken, sautéed mushrooms, onions, tomatoes, over fettucine.</p>
+
+        <h3>Chicken Picatta <span class="price">$24.95</span></h3>
+        <p class="dish-desc">Chicken in lemon butter sauce, capers, over fettuccine.</p>
+
+        <h3>Pollo alla Marsala <span class="price">$24.95</span></h3>
+        <p class="dish-desc">Chicken sautéed in sweet marsala wine, mushrooms, shallots, over fettucine.</p>
+
+        <h3>Pollo del Vesuvio <span class="price">$29.95</span></h3>
+        <p class="dish-desc">Double chicken breast sautéed in a fresh rosemary garlic jus, potato spears.</p>
+
+        <h3>Pollo Saltimbocca <span class="price">$29.95</span></h3>
+        <p class="dish-desc">Double chicken breast layered with fresh sage and prosciutto in a white wine sauce, melted provolone, potato spears.</p>
+
+        <h3>Risotto di Primavera <span class="price">$23.95</span></h3>
+        <p class="dish-desc">Seasonal vegetables, creamy arborio rice, Romano cheese.</p>
+
+        <h3>Risotto Funghi <span class="price">$24.95</span></h3>
+        <p class="dish-desc">Hazel Dell wild mushrooms, mushroom stock, white wine, Pecorino.</p>
+
+        <h3>Risotto di Mare <span class="price">$39.95</span></h3>
+        <p class="dish-desc">Wild caught Pacific shrimp, Diver sea scallops, Prince Edward Island mussels, creamy saffron risotto.</p>
+
+        <h2>Secondi Piatti</h2>
+        <p class="dish-desc" style="font-style:normal; margin-bottom: 20px;"><em>Served with homemade garlic bread.</em></p>
+
+        <h3>Salmon Pappardelle <span class="price">$25.95</span></h3>
+        <p class="dish-desc">Atlantic salmon, Hazel Del mushrooms, Roma tomatoes, spinach, Pappardelle egg pasta, garlic pan sauce.</p>
+
+        <h3>Salmon Margherita <span class="price">$25.95</span></h3>
+        <p class="dish-desc">Grilled filet of Atlantic salmon, tomatoes, basil, garlic, over fettuccine.</p>
+
+        <h3>Mussels Carciofi <span class="price">$25.95</span></h3>
+        <p class="dish-desc">Prince Edward Island mussels, artichokes, mushrooms, tomato sauce sautéed with white wine, over pasta.</p>
+
+        <h3>Shrimp Abruzzo <span class="price">$26.95</span></h3>
+        <p class="dish-desc">Wild caught pacific shrimp sautéed with caramelized bell peppers, onions, over pasta.</p>
+
+        <h3>Shrimp Scampi <span class="price">$26.95</span></h3>
+        <p class="dish-desc">Wild caught Pacific shrimp in lemon butter sauce with white wine, garlic, over fettuccine.</p>
+
+        <h3>Pesce Asiago <span class="price">$39.95</span></h3>
+        <p class="dish-desc">Wild caught Pacific shrimp, Prince Edward Island mussels, Diver sea scallops, sautéed tomatoes, asiago cream sauce, over fettuccine.</p>
+
+        <h3>Diver Scallops Cacciatore <span class="price">$34.95</span></h3>
+        <p class="dish-desc">Seared Diver scallops sautéed with mushrooms, onions, garlic, tomatoes, fettucine.</p>
+
+        <h3>Veal Picatta <span class="price">$35.95</span></h3>
+        <p class="dish-desc">Filet of veal dusted in flour, seared with a creamy lemon butter sauce, capers, over fettucine.</p>
+
+        <h3>Veal Parmigiana <span class="price">$35.95</span></h3>
+        <p class="dish-desc">Breaded filet of veal baked with marinara, ricotta, mozzarella, served with pasta.</p>
+
+        <h3>Veal Scallopini <span class="price">$35.95</span></h3>
+        <p class="dish-desc">Tender veal sautéed with mushrooms, onions, garlic, white wine, over pasta.</p>
+
+        <h3>Steak Pizzaiola <span class="price">$43.95</span></h3>
+        <p class="dish-desc">8 oz. grilled beef tenderloin, bell peppers, mushrooms, onions, tomatoes, over pasta.</p>
+
+        <h3>Steak Vesuvio <span class="price">$43.95</span></h3>
+        <p class="dish-desc">8 oz. grilled beef tenderloin, olive oil, fresh rosemary garlic jus, with potato spears.</p>
+
+        <h2>Artisan Pizza</h2>
+        <h3>Agean <span class="price">$19.45 - $33.95</span></h3>
+        <p class="dish-desc">Olive oil glaze, spinach, garlic, mozzarella, sun-dried tomatoes, feta, greek oregano.</p>
+
+        <h3>Babbo <span class="price">$18.45 - $32.95</span></h3>
+        <p class="dish-desc">Olive oil glaze, fresh basil, ripe organic tomatoes, garlic, mozzarella and fontina.</p>
+
+        <h3>Margherita <span class="price">$18.45 - $32.95</span></h3>
+        <p class="dish-desc">San Marzano tomato sauce, basil, fresh mozzarella.</p>
+
+        <h3>Classico <span class="price">$21.45 - $34.95</span></h3>
+        <p class="dish-desc">San Marzano tomato sauce, Lonardo's sausage, pepperoni, green pepper, onions, mushrooms, mozzarella.</p>
+
+        <h3>Pesto Pollo <span class="price">$20.45 - $33.95</span></h3>
+        <p class="dish-desc">Basil garlic pesto, broiled all natural chicken, ricotta cheese, mozzarella.</p>
+
+        <h3>Crudo <span class="price">$21.45 - $34.95</span></h3>
+        <p class="dish-desc">Olive oil, fresh mozzarella, Parma Prosciutto, garlic, Red Wagon Farms arugula.</p>
+
+        <h3>Funghi <span class="price">$20.45 - $33.95</span></h3>
+        <p class="dish-desc">Hazel Dell mushrooms, spinach, garlic, mozzarella, Gorgonzola, white truffle oil.</p>
+
+        <h3>Mediterraneo <span class="price">$22.45 - $34.95</span></h3>
+        <p class="dish-desc">San Marzano tomato sauce, grilled pineapple, Parma Prosciutto, Red Wagon Farms arugula, mozzarella, apricot-calabria chili drizzle.</p>
+
+        <h3>Gamberetti <span class="price">$22.45 - $34.95</span></h3>
+        <p class="dish-desc">Wild caught Pacific shrimp, Haystack Mtn. goat cheese, garlic, mozzarella, drizzle of white truffle oil.</p>
+
+        <h2>Hot Paninis</h2>
+        <p class="dish-desc" style="font-style:normal; margin-bottom: 20px;"><em>Your choice of homemade fries or pennette salad. Truffle fries: add $2.</em></p>
+        
+        <h3>Grilled Eggplant Panini <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Tomato, onion, arugula, roasted red peppers, fresh mozzarella, smoked tomato aioli.</p>
+
+        <h3>Salumi Panini <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Prosciutto, Genoa salami, goat cheese, sage pesto, arugula, onion.</p>
+
+        <h3>Smoked Salmon Panini <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Arugula, onion, cucumber, horseradish crema.</p>
+
+        <h3>Chicken Pesto Panini <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Sage pesto, goat cheese, arugula, onion.</p>
+
+        <h3>Classic Parmigiano Sandwich <span class="price">$17.95</span></h3>
+        <p class="dish-desc">Choose from chicken, eggplant, meatball or sausage.</p>
+
+        <h3>Hamburger <span class="price">$18.95 - $19.95</span></h3>
+        <p class="dish-desc">Half pound double patty.</p>
+
+        <h3>Italian Sub <span class="price">$19.95</span></h3>
+        <p class="dish-desc">Prosciutto, salami, pepperoni, provolone, lettuce, tomato, onions, vinaigrette.</p>
+
+        <h2>Calzoni</h2>
+        <p class="dish-desc" style="font-style:normal; margin-bottom: 20px;"><em>All calzones are baked with marinara, Romano, parmesan, ricotta and mozzarella cheese.</em></p>
+
+        <h3>Pepperoni <span class="price">$18.95</span></h3>
+        <h3>Sausage or Meatball <span class="price">$18.95</span></h3>
+        <h3>Garbage <span class="price">$19.95</span></h3>
+        <p class="dish-desc">All of the above.</p>
+        
+        <h3>Veggie <span class="price">$18.95</span></h3>
+        <p class="dish-desc">Mushrooms, onion, broccoli, roasted red peppers.</p>
+
+        <h3>Classic <span class="price">$18.95</span></h3>
+        <p class="dish-desc">Prosciutto, Genoa salami, pepperoni, roasted red peppers.</p>
+
+        <h3>Chicken Pesto <span class="price">$18.95</span></h3>
+        <p class="dish-desc">Broiled chicken, marinated sun-dried tomatoes, basil pesto.</p>
+
+        <h2>Pizza</h2>
+        <h3>Cheese <span class="price">$33.95</span></h3>
+        <h3>One Topping <span class="price">$34.95</span></h3>
+        <h3>Two Topping <span class="price">$35.95</span></h3>
+        <h3>Additional Toppings <span class="price">$3.95</span></h3>
+        <p class="dish-desc">Choose from selection below.</p>
+        
+        <h3>Sauce</h3>
+        <p class="dish-desc">Red, pesto, olive oil.</p>
+        
+        <h3>Cheese</h3>
+        <p class="dish-desc">Mozzarella, Fresh Mozzarella, Asiago, Feta, Gorgonzola, Ricotta, Goat, Provolone, Fontina, Pecorino.</p>
+        
+        <h3>Meat</h3>
+        <p class="dish-desc">Prosciutto, grilled chicken, Italian sausage, ground beef, pepperoni, salami, anchovies, speck.</p>
+        
+        <h3>Veggies</h3>
+        <p class="dish-desc">Spinach, arugula, sun-dried tomatoes, mushrooms, eggplant, onions, Mediterranean olives, bell peppers, tomatoes, roasted red peppers, grilled pineapple.</p>
+
     </main>
 
     <footer>
         <p>Carelli's of Boulder</p>
         <p>645 30th St, Boulder, CO 80303</p>
-        <!-- Removed the inline style here so style.css handles the color -->
         <p>Phone: <a href="tel:3039389300">303. 938.9300</a></p>
     </footer>
 
