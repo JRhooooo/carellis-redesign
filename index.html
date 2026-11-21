@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Carelli's of Boulder offers authentic Italian cuisine. View our dinner menu, make reservations, and find our hours.">
     <title>Carelli's of Boulder - Home</title>
-    <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Component 6: Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Component 1: Header Landmark -->
     <header>
         <h1 class="logo-text">Carelli's of Boulder</h1>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="dinner.html">Dinner Menu</a></li>
+                <li class="dropdown">
+                    <a href="dinner.html">Dinner Menu</a>
+                    <div class="dropdown-content">
+                        <a href="gluten-free.html">Gluten-Free Menu</a>
+                    </div>
+                </li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -31,10 +33,8 @@
         <p>Authentic Italian cuisine in the heart of Boulder since 1991.</p>
     </div>
 
-    <!-- Component 1: Main Landmark -->
     <main id="main-content">
         
-        <!-- Component 5: Clickable Phone Number -->
         <div class="reservation">
             <p><strong>Reservations Recommended</strong></p>
             <p>Call us at: <a href="tel:3039389300">303-938-9300</a></p>
@@ -44,11 +44,9 @@
         <p>Warmer weather brings the opportunity to dine al fresco on Carelli's patio. The restaurant's stunning décor is matched by friendly, flawless service and a menu that combines the best from both traditional and contemporary cuisines of northern and southern Italy.</p>
     </main>
 
-    <!-- Component 1: Footer Landmark -->
     <footer>
         <p>Carelli's of Boulder</p>
         <p>645 30th St, Boulder, CO 80303</p>
-        <!-- Inline style removed here -->
         <p>Phone: <a href="tel:3039389300">303. 938.9300</a></p>
         <p>Hours: Mon-Thu 4-9 PM | Fri-Sat 4-9:30 PM | Closed Sunday</p>
     </footer>
