@@ -3,46 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the dinner menu at Carelli's of Boulder.">
     <title>Dinner Menu - Carelli's of Boulder</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
-        
-        .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
-        .skip-link:focus { top: 0; }
-        
-        /* Header */
-        header { background-color: #222; padding: 20px; }
-        
-        /* Specific rule to force the logo text to be white */
-        .logo-text { color: #ffffff !important; margin: 0 0 10px 0; }
-        
-        /* Navigation */
-        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; margin: 0; }
-        nav a { color: #ffffff; text-decoration: none; font-weight: bold; }
-        nav a:focus { outline: 3px solid #cfa670; }
-        
-        /* Main Content */
-        main { padding: 20px; max-width: 800px; margin: auto; background: #fff; }
-        
-        /* Page Title */
-        .page-title { color: #222; border-bottom: 2px solid #cfa670; padding-bottom: 10px; }
-        
-        /* Menu Typography */
-        h2 { color: #cfa670; margin-top: 30px; border-bottom: 1px solid #ccc; }
-        h3 { color: #333; margin-bottom: 5px; }
-        
-        .dish-desc { margin-top: 0; color: #555; font-style: italic; }
-        .price { float: right; font-weight: bold; }
-        
-        footer { background-color: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
-    </style>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <!-- Added class="logo-text" here -->
         <h1 class="logo-text">Carelli's of Boulder</h1>
         <nav aria-label="Main Navigation">
             <ul>
@@ -55,7 +25,6 @@
     </header>
 
     <main id="main-content">
-        <!-- Added class="page-title" here -->
         <h1 class="page-title">Dinner Menu</h1>
 
         <!-- Component 2: Fixed Heading Hierarchy (H2 for sections, H3 for dishes) -->
@@ -85,7 +54,8 @@
     <footer>
         <p>Carelli's of Boulder</p>
         <p>645 30th St, Boulder, CO 80303</p>
-        <p>Phone: <a href="tel:3039389300" style="color: #cfa670;">303. 938.9300</a></p>
+        <!-- Removed the inline style here so style.css handles the color -->
+        <p>Phone: <a href="tel:3039389300">303. 938.9300</a></p>
     </footer>
 
 </body>
